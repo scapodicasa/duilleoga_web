@@ -6,260 +6,142 @@
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-		crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Fjalla+One&display=swap" rel="stylesheet">
+	<meta name="description" content="Duilleoga – trio di musica tradizionale irlandese. Flauto, violino e chitarra.">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,600;0,700;1,400;1,600&family=Lora:ital,wght@1,400&family=Oswald:wght@400;500&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
 		integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#home">
-						<h4>home</h4>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#video">
-						<h4>video</h4>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#about">
-						<h4>il trio</h4>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#music">
-						<h4>musica</h4>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" target="_blank" href="https://drive.google.com/drive/folders/1p3JErvCA1ub1m_vCn_9GWwT2ELLa7dks?usp=drive_link">
-						<h4>epk</h4>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://www.facebook.com/pg/duilleoga.it/events/" target="_blank">
-						<h4>eventi</h4>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="mailto:info@duilleoga.it?Subject=Mail%20from%20website">
-						<h4>contatti</h4>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto flex-row justify-content-center">
-				<li class="nav-item pl-2">
-					<a class="nav-link" href="https://www.facebook.com/duilleoga.it/" target="_blank">
-						<h4><i class="fab fa-facebook-f"></i></h4>
-					</a>
-				</li>
-				<li class="nav-item pl-2">
-					<a class="nav-link" href="https://www.instagram.com/duilleoga.it/" target="_blank">
-						<h4><i class="fab fa-instagram"></i></h4>
-					</a>
-				</li>
-				<li class="nav-item pl-2">
-					<a class="nav-link" href="https://www.youtube.com/channel/UC8R0WECWi87D0P_kh8RglSQ" target="_blank">
-						<h4><i class="fab fa-youtube"></i></h4>
-					</a>
-				</li>
-				<li class="nav-item pl-2">
-					<a class="nav-link" href="spotify:artist:3s3zx3hcoTanbw0xcnmxXx" target="_blank">
-						<h4><i class="fab fa-spotify"></i></h4>
-					</a>
-				</li>
-			</ul>
+	<!-- Navbar -->
+	<nav id="navbar">
+		<div class="nav-inner">
+			<a class="nav-brand" href="#home">
+				<img src="images/d_word.png" alt="Duilleoga" class="nav-logo">
+			</a>
+			<button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+			<div class="nav-links" id="nav-links">
+				<a href="#video">video</a>
+				<a href="#about">il trio</a>
+				<a href="#music">musica</a>
+				<a href="https://drive.google.com/drive/folders/1p3JErvCA1ub1m_vCn_9GWwT2ELLa7dks?usp=drive_link" target="_blank" rel="noopener">epk</a>
+				<a href="mailto:info@duilleoga.it?Subject=Mail%20from%20website">contatti</a>
+				<div class="nav-social">
+					<a href="https://www.facebook.com/duilleoga.it/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/duilleoga.it/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UC8R0WECWi87D0P_kh8RglSQ" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+					<a href="spotify:artist:3s3zx3hcoTanbw0xcnmxXx" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+				</div>
+			</div>
 		</div>
 	</nav>
 
-	<div>
-		<div class="section full-screen-bg" id="home">
-			<div class="container">
-				<div class="row">
-					<div class="text-center col-sm-12 col-md-12 col-lg-12 fade-in">
-						<img src="images/d_word.png" style="width: 100%; max-width: 1024px; margin-top: 35%;">
+	<!-- Hero -->
+	<section class="hero" id="home">
+		<div class="hero-content fade-in">
+			<img src="images/d_word.png" alt="Duilleoga" class="hero-logo">
+		</div>
+		<a class="scroll-down" href="#video" aria-label="Scorri in basso">
+			<i class="fas fa-chevron-down"></i>
+		</a>
+	</section>
 
-						<!-- <div class="spacer4"></div>
-
-						<p>Vuoi la copia fisica?</br>
-							<a href="mailto:info@duilleoga.it?Subject=Voglio%20Irish%20Bites"><u>Contattaci!</u></a></p> -->
-					</div>
-				</div>
+	<!-- Video -->
+	<section class="section" id="video">
+		<div class="container">
+			<h1 class="section-title reveal">video</h1>
+			<div class="video-wrapper reveal">
+				<iframe src="https://www.youtube.com/embed/6nkf5T3nwTc"
+					allowfullscreen title="Duilleoga – video"></iframe>
 			</div>
 		</div>
+	</section>
 
-		<div class="container section" id="video">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				<h1>video</h1>
+	<!-- Il Trio -->
+	<section class="section" id="about">
+		<div class="container">
+			<h1 class="section-title reveal">il trio</h1>
+			<p class="about-intro reveal">
+				Simone, Beatrice e Simone, nonostante la giovane età, sono musicisti già affermati in progetti musicali eterogenei che spaziano dalla musica classica al folk, con incursioni in generi contemporanei. Con Duilleoga, hanno deciso di unire le loro esperienze e sensibilità artistiche per dare vita a un progetto unico: un trio che fonde tradizione e modernità in una proposta fresca e coinvolgente.
+				<br><br>
+				Il trio, composto da flauto irlandese, violino e chitarra, si distingue per la capacità di reinterpretare la musica tradizionale irlandese con un tocco personale, rendendo sia brani da ballo che melodie più riflessive attuali e accessibili a un pubblico generalista, senza perdere l'attenzione dei cultori del genere. Il repertorio include brani della tradizione irlandese e scozzese, combinati con composizioni contemporanee e incursioni in altre culture musicali affini, creando uno spettacolo ricco di sorprese per lo spettatore.
+				<br><br>
+				Lo spettacolo di Duilleoga è estremamente versatile e si adatta a molteplici contesti, dai piccoli club e sale da concerto intime ai grandi festival all'aperto. Grazie alla capacità di creare atmosfere coinvolgenti e all'energia travolgente del trio, la loro musica riesce a conquistare ogni tipo di pubblico, rendendo ogni evento unico e memorabile.
+			</p>
+			<div class="members-grid">
+				<button class="member-card reveal" data-member="cheip" aria-label="Leggi la bio di Simone Capodicasa">
+					<img class="member-photo" src="images/cheip_sq.jpg" alt="Simone Capodicasa">
+					<h3>Simone Capodicasa</h3>
+					<h4>— Uilleann Pipes e Flauti —</h4>
+					<span class="member-cta">Leggi la bio <i class="fas fa-arrow-right"></i></span>
+				</button>
+				<button class="member-card reveal" data-member="bea" aria-label="Leggi la bio di Beatrice Tola">
+					<img class="member-photo" src="images/bea_sq.jpg" alt="Beatrice Tola">
+					<h3>Beatrice Tola</h3>
+					<h4>— Violino —</h4>
+					<span class="member-cta">Leggi la bio <i class="fas fa-arrow-right"></i></span>
+				</button>
+				<button class="member-card reveal" data-member="saimon" aria-label="Leggi la bio di Simone Dani">
+					<img class="member-photo" src="images/saimon_sq.jpg" alt="Simone Dani">
+					<h3>Simone Dani</h3>
+					<h4>— Chitarra —</h4>
+					<span class="member-cta">Leggi la bio <i class="fas fa-arrow-right"></i></span>
+				</button>
 			</div>
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6nkf5T3nwTc"
-					allowfullscreen></iframe>
-			</div>
-			<!-- <div class="spacer1"></div>
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gQg0GUADhYE"
-					allowfullscreen></iframe>
-			</div>
-			<div class="spacer1"></div>
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GameLvadsVw"
-					allowfullscreen></iframe>
-			</div> -->
-		</div>
 
-		<div class="container section" id="about">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				<h1>il trio</h1>
-			</div>
-			<div class="row text-center">
-				<p>
-					Simone, Beatrice e Simone, nonostante la giovane età, sono musicisti già affermati in progetti musicali eterogenei che spaziano dalla musica classica al folk, con incursioni in generi contemporanei. Con Duilleoga, hanno deciso di unire le loro esperienze e sensibilità artistiche per dare vita a un progetto unico: un trio che fonde tradizione e modernità in una proposta fresca e coinvolgente.
-					<br/>
-					Il trio, composto da flauto irlandese, violino e chitarra, si distingue per la capacità di reinterpretare la musica tradizionale irlandese con un tocco personale, rendendo sia brani da ballo che melodie più riflessive attuali e accessibili a un pubblico generalista, senza perdere l’attenzione dei cultori del genere. Il repertorio include brani della tradizione irlandese e scozzese, combinati con composizioni contemporanee e incursioni in altre culture musicali affini, creando uno spettacolo ricco di sorprese per lo spettatore.
-					<br/>
-					Lo spettacolo di Duilleoga è estremamente versatile e si adatta a molteplici contesti, dai piccoli club e sale da concerto intime ai grandi festival all'aperto. Grazie alla capacità di creare atmosfere coinvolgenti e all’energia travolgente del trio, la loro musica riesce a conquistare ogni tipo di pubblico, rendendo ogni evento unico e memorabile.
-				</p>
-			</div>
-			<div class="row text-center">
-				<div class="text-center col-sm-12 col-md-4 col-lg-4">
-					<img class="rounded-circle" src="images/cheip_sq.jpg" style="width: 100%; max-width: 250px;">
-					<div class="mt-4">
-						<h3>Simone Capodicasa</h3>
-							<h4>- Flauto -</h4>
-								<p>
-									Flautista sin dalla giovane età, approfondisce le tecniche di flauto irlandese e uilleann pipes studiando con alcuni tra i più riconosciuti artisti a livello mondiale. Nel 2018 fonda il trio trad Duilleoga e nel 2023 la band The Cracking Reeds. Dal 2024 fa parte della formazione stabile della band neo-trad Bards From Yesterday. Occasionalmente collabora con formazioni di musica pop e moderna suonando nel 2022 con il Sunshine Gospel Choir.
-								</p>
-					</div>
-				</div>
-				<div class="text-center col-sm-12 col-md-4 col-lg-4">
-					<img class="rounded-circle" src="images/bea_sq.jpg" style="width: 100%; max-width: 250px;">
-					<div class="mt-4">
-						<h3>Beatrice Tola</h3>
-							<h4>- Violino -</h4>
-								<p>
-									Violinista classe 1999, si forma inizialmente nello studio del pianoforte e del violino classico, per poi avvicinarsi alla musica tradizionale irlandese nel 2023 grazie all'incontro con Tóla Custy, fiddler di fama internazionale. Approfondisce il repertorio irlandese frequentando session e perfezionando la tecnica con artisti affermati ed emergenti del panorama trad contemporaneo.
-								</p>
-					</div>
-				</div>
-				<div class="text-center col-sm-12 col-md-4 col-lg-4">
-					<img class="rounded-circle" src="images/saimon_sq.jpg" style="width: 100%; max-width: 250px;">
-					<div class="mt-4">
-						<h3>Simone Dani</h3>
-							<h4>- Chitarra -</h4>
-								<p>
-									Formato come chitarrista fingerstyle e jazz, ha pubblicato come solista due album e tre singoli. Dopo concerti in Italia e Svizzera, si avvicina alla musica irlandese partecipando alle storiche session torinesi. Perfeziona la tecnica di accompagnamento irlandese in accordatura aperta, fonda nel 2018 il trio trad Duilleoga e nel 2023 la formazione The Cracking Reeds, esibendosi in festival e rassegne in Italia e all’estero.
-								</p>
-					</div>
-				</div>
+	<!-- Bio Modal -->
+	<div class="bio-modal" id="bio-modal" role="dialog" aria-modal="true" aria-labelledby="modal-name" hidden>
+		<div class="bio-modal-backdrop"></div>
+		<div class="bio-modal-box">
+			<button class="bio-modal-close" id="bio-modal-close" aria-label="Chiudi">
+				<i class="fas fa-times"></i>
+			</button>
+			<img class="bio-modal-photo" id="modal-photo" src="" alt="">
+			<div class="bio-modal-text">
+				<h3 id="modal-name"></h3>
+				<h4 id="modal-instrument"></h4>
+				<p id="modal-bio"></p>
 			</div>
 		</div>
 	</div>
-	<div class="container section" id="music">
-		<div class="col-sm-12 col-md-12 col-lg-12">
-			<h1>musica</h1>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-12">
-			<h4>Ci potete trovare su tutte le principali piattaforme di streaming musicale:</h4>
-		</div>
-		<div class="row text-center mt-4 mb-4">
-			<div class="col-sm-12 col-md-2 col-lg-2">
-				<a href="spotify:artist:3s3zx3hcoTanbw0xcnmxXx" target="_blank">
-					<h5>Spotify</h5>
+	</section>
+
+	<!-- Musica -->
+	<section class="section" id="music">
+		<div class="container">
+			<h1 class="section-title reveal">musica</h1>
+			<p class="reveal">Ci potete trovare su tutte le principali piattaforme di streaming musicale:</p>
+			<div class="platforms-grid reveal">
+				<a class="platform-link" href="spotify:artist:3s3zx3hcoTanbw0xcnmxXx" aria-label="Ascolta su Spotify">
+					<i class="fab fa-spotify"></i>
 				</a>
-			</div>
-			<div class="col-sm-12 col-md-2 col-lg-2">
-				<a href="https://music.amazon.it/artists/B07XYJ8YW4/duilleoga" target="_blank">
-					<h5>Amazon Unlimited</h5>
+				<a class="platform-link" href="https://music.amazon.it/artists/B07XYJ8YW4/duilleoga" target="_blank" rel="noopener" aria-label="Ascolta su Amazon Music">
+					<i class="fab fa-amazon"></i>
 				</a>
-			</div>
-			<div class="col-sm-12 col-md-2 col-lg-2">
-				<a href="https://music.apple.com/it/artist/duilleoga/1479508705" target="_blank">
-					<h5>Apple</h5>
+				<a class="platform-link" href="https://music.apple.com/it/artist/duilleoga/1479508705" target="_blank" rel="noopener" aria-label="Ascolta su Apple Music">
+					<i class="fab fa-apple"></i>
 				</a>
-			</div>
-			<div class="col-sm-12 col-md-2 col-lg-2">
-				<a href="https://www.youtube.com/channel/UC8R0WECWi87D0P_kh8RglSQ" target="_blank">
-					<h5>YouTube</h5>
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-2 col-lg-2">
-				<a href="https://tidal.com/artist/16837207" target="_blank">
-					<h5>Tidal</h5>
-				</a>
-			</div>
-			<div class="col-sm-12 col-md-2 col-lg-2">
-				<a href="https://deezer.page.link/vEdMpuuV5Vv8KaC17" target="_blank">
-					<h5>Deezer</h5>
+				<a class="platform-link" href="https://www.youtube.com/channel/UC8R0WECWi87D0P_kh8RglSQ" target="_blank" rel="noopener" aria-label="Guarda su YouTube">
+					<i class="fab fa-youtube"></i>
 				</a>
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-12">
-			<iframe src="https://open.spotify.com/embed/artist/3s3zx3hcoTanbw0xcnmxXx" width="100%" height="380"
-				frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-		</div>
-	</div>
-	</div>
-	</div>
+	</section>
 
 	<!-- Footer -->
-	<footer class="page-footer font-small blue">
-		<div class="text-center">
+	<footer>
+		<div class="footer-inner">
 			<a href="events.html">Eventi passati</a>
+			<p>© <span id="copyright-year">2020</span> Duilleoga | made with <i class="fas fa-heart"></i> by SC</p>
 		</div>
-
-		<!-- Copyright -->
-		<div class="footer-copyright text-center py-3">© <span id="copyright-year">2020</span> Copyright: Duilleoga | made with <i
-				class="fas fa-heart"></i> by SC</div>
-		<!-- Copyright -->
-
 	</footer>
-	<!-- Footer -->
 
-	<script>
-		$(function () {
-			$('a[href*="#"]:not([href="#"])').click(function () {
-				var target = $(this.hash);
-				if (target.length) {
-					$("html, body").animate(
-						{
-							scrollTop: target.offset().top
-						},
-						1000);
-					return false;
-				}
-			})
-			$('.navbar-nav>li>a').on('click', function () {
-				$('.navbar-collapse').collapse('hide');
-			});
-		});
-
-		document.querySelector('#copyright-year').innerText = new Date().getFullYear();
-	</script>
+	<script src="script.js"></script>
 </body>
 
 </html>
